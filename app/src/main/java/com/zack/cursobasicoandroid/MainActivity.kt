@@ -11,6 +11,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import com.zack.cursobasicoandroid.composables.ButtonExample
 import com.zack.cursobasicoandroid.composables.ImageExample
+import com.zack.cursobasicoandroid.composables.ProfileScreen
 import com.zack.cursobasicoandroid.composables.TestExample
 import com.zack.cursobasicoandroid.ui.theme.CursoBasicoAndroidTheme
 
@@ -20,10 +21,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             CursoBasicoAndroidTheme {
-               TestExample(name = "Pepe")
-                ImageExample()
-                ButtonExample()
-
+                ProfileScreen()
             }
         }
     }
